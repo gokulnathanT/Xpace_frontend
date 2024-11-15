@@ -62,58 +62,7 @@ function Dashboard() {
           ))}
         </tbody>
       </table>
-          <div className='grid'>
-            {data.map((journey)=>(
-              <div className='card-main' key={journey.id} style={{
-                  width: "270px",
-                  height: "210px",
-                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "flex-start",
-                  alignItems: "stretch",
-              }}>
-                <div className='card-body'
-                style={{
-                  flexGrow: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  padding: "10px",
-                  }}>
-                    <h5 className='card-title' style={{margin: "0 0 10px 0", fontSize: "1.2rem"}}>
-                      ID : {journey.id}
-                      </h5>
-                      <div className='idx'>
-                        <div className='text'>
-                          <h4>
-                                Truck Id: {journey.truck_no} 
-                        </h4>
-                        </div>
-                        <div className='text'>
-                          <h4>
-                                Driver_id: {journey.driver_id}
-                          </h4>
-                          </div>
-                        </div>
-                      <i className='card-trip'>
-                      Destination : {journey.start} to {journey.end}
-                      </i>
-                    <p>
-                        Schedule : {journey.s_Date} to {journey.e_Date}
-                      </p>
-                    
-                  </div>
-                  <div className='view-button'>
-                    <button> view </button>
-                  </div>
-                  
-            </div>
-            ))}
-
-          </div>
+          
 
     </div>
   );

@@ -14,7 +14,7 @@ function Navbar(){
                         <li className="nav-item"><a className="nav-link" href="/">Home </a></li>
                         <li className="nav-item"><a className="nav-link" href="/Dashboard">Dashboard</a></li>
                         <li className="nav-item"><a className="nav-link" href="/Journeys">Journey</a></li>
-                        <li className="nav-item" id="signIn"><a className="nav-link" href="/">Sign In</a></li>
+                        <li className="nav-item" id="signIn"><a className="nav-link" href="/Login">Sign In</a></li>
                         <li className="nav-item" id="signUp"><a className="nav-link" href="/">Sign Up</a></li>
                     </ul>
                     
