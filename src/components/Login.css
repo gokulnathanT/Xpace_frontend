@@ -9,6 +9,9 @@ input{
     display: flex;
     gap: 5px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
 }
 button{
     margin-top: 10px;

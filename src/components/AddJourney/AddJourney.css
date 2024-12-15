@@ -1,0 +1,57 @@
+.add-journey {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid var(--text-secondary);
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px;
+}
+
+.form__group--inline {
+  flex-direction: row;
+}
+
+.form__group--inline .form__label {
+  margin-right: 8px;
+  margin-bottom: 0;
+}
+
+.form__label {
+  margin-bottom: 6px;
+}
+
+.form__divider {
+  height: 1px;
+  margin: 24px 0;
+  background-color: var(--bg-secondary);
+}
+
+.form__checkbox-group,
+.form__radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__checkbox-group--inline,
+.form__radio-group--inline {
+  flex-direction: row;
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}

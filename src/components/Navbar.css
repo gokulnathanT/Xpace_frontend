@@ -6,22 +6,22 @@
     height: 60px;
     width:auto;
     justify-content: space-around;
-    background-color: #F9EFDB;
+    background-color: #c7c7c7;
 }
 .nav-item{
     list-style: none;
     margin: 0 10px ;
-    background-color: #257180;
+    background-color: #1393ac;
     padding: 2px 4px 2px 4px;
     border-radius: 4px;
 
 }
 #signUp, #signIn{
-    background-color:#9DBC98 ;
+    background-color:#1393ac ;
 }
 .nav-link{
     text-decoration: none;
-    color: #EBD9B4;
+    color: #ffffff;
 }
 
 #logo{

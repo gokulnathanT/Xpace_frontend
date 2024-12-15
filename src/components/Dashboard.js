@@ -1,33 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Navbar from './Navbar';
 import "./Dashboard.css";
+import {Data} from '../Data/Data'
 
 function Dashboard() {
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    // Axios GET request to the API
-    axios.get('http://localhost:8081/api/Journey',{
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-      .then(response => {
-        // Axios automatically parses the JSON response, no need for .json() method
-        setData(response.data);  // Set the data from the response
-      })
-      .catch(error => {
-        // Handle errors
-        setError(error.message);
-      });
-  }, []);
-
+  const[data,setData]=useState([]);
+  const[error,setError]=useState(null);
+  
+  useEffect(()=>{
+    async function getData(){
+      try{
+        const journey=await Data();
+        setData(journey);
+      }
+      catch(err){
+        setError(err.message);
+      }
+    }
+    getData();
+  },[]);
   return (
     <div>
-      <Navbar/>
-      {error && <p>Error: {error}</p>}
       <table>
         <thead>
           <tr>
